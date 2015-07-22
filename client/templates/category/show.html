@@ -1,0 +1,24 @@
+<template name="categoryShow">
+    <div class="container">
+        <h1 class="alert alert-info text-center">{{name}}</h1>
+        <div class="row">
+            {{#each products}}
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img class="img-responsive shadow-z-2 thumbnail" src="/images/products/{{image}}" alt="{{name}}" />
+                        </div>
+                        <div class="col-md-4">
+                            <h3>{{name}}</h3>
+                            <p>{{summary}}</p>
+                            <p class="price-text-color">Цена: {{money price}}</p>
+                            <p><a class="btn btn-success" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Купить</a></p>
+                            <p><a href="{{pathFor 'productsShow'}}">Подробнее</a></p>
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</template>

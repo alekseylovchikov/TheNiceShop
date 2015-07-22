@@ -15,17 +15,17 @@
                     <li class="dropdown">
                         <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Товары <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Все</a></li>
-                            <li><a href="#">Кошельки</a></li>
-                            <li><a href="#">Сумки</a></li>
+                            {{#each category}}
+                                <li><a href="{{pathFor 'categoryShow'}}">{{name}}</a></li>
+                            {{/each}}
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Производители <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Все</a></li>
-                            <li><a href="#">Zi</a></li>
-                            <li><a href="#">Cloud Store</a></li>
+                            {{#each vendors}}
+                                <li><a href="{{pathFor 'vendorsShow'}}">{{name}}</a></li>
+                            {{/each}}
                         </ul>
                     </li>
                     <li><a href="{{pathFor 'homeContact'}}">Контакты</a></li>

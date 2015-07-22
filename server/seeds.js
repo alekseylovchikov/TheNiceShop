@@ -1,3 +1,5 @@
+console.log("Seeds launched...");
+
 var productsSeeds = [
     {
         "sku": "art1",
@@ -5,10 +7,10 @@ var productsSeeds = [
         "image": "img_1.jpg",
         "summary": "Кошелек из кожи",
         "description": "Очень крутой и модный кошелек из кожи...",
-        "price": 4010,
+        "price": 3500,
         "inventory": 55,
         "status": "published",
-        "cost": 3124,
+        "cost": 2354,
         "vendor": {
             "id": 1,
             "country": "Россия",
@@ -17,7 +19,7 @@ var productsSeeds = [
             "slug": "zi"
         },
         date: new Date().toLocaleDateString(),
-        category: "кошельки"
+        category: "wallets"
     },
     {
         "sku": "art2",
@@ -25,7 +27,7 @@ var productsSeeds = [
         "image": "img_2.jpg",
         "summary": "Кошелек из кожи",
         "description": "Очень крутой и модный кошелек из кожи...",
-        "price": 2010,
+        "price": 3500,
         "inventory": 99,
         "status": "published",
         "cost": 2325,
@@ -37,7 +39,7 @@ var productsSeeds = [
             "slug": "zi"
         },
         date: new Date().toLocaleDateString(),
-        category: "кошельки"
+        category: "wallets"
     },
     {
         "sku": "art3",
@@ -45,7 +47,7 @@ var productsSeeds = [
         "image": "img_3.jpg",
         "summary": "Кошелек из кожи",
         "description": "Очень крутой и модный кошелек из кожи...",
-        "price": 2400,
+        "price": 4500,
         "inventory": 22,
         "status": "published",
         "cost": 5320,
@@ -57,7 +59,7 @@ var productsSeeds = [
             "slug": "zi"
         },
         date: new Date().toLocaleDateString(),
-        category: "кошельки"
+        category: "wallets"
     },
     {
         "sku": "art4",
@@ -65,7 +67,7 @@ var productsSeeds = [
         "image": "img_4.jpg",
         "summary": "Сумка из кожи",
         "description": "Очень крутая и модная сумка из кожи. Фирмы изготовитель <strong>ZI</strong>, г. Москва",
-        "price": 3150,
+        "price": 12500,
         "inventory": 33,
         "status": "published",
         "cost": 2324,
@@ -77,7 +79,7 @@ var productsSeeds = [
             "slug": "zi"
         },
         date: new Date().toLocaleDateString(),
-        category: "сумки"
+        category: "bags"
     }
 ];
 
@@ -122,5 +124,25 @@ if(Vendors.find().count() === 0) {
     _.each(vendors, function(vendor) {
         Vendors.insert(vendor);
         console.log("Added vendor:", vendor.name);
+    });
+}
+
+if(Category.find().count() === 0) {
+    var category = [
+        {
+            id: 1,
+            name: "кошельки",
+            slug: "wallets"
+        },
+        {
+            id: 2,
+            name: "сумки",
+            slug: "bags"
+        }
+    ];
+
+    _.each(category, function(cat) {
+        Category.insert(cat);
+        console.log("Added category:", cat.slug);
     });
 }
