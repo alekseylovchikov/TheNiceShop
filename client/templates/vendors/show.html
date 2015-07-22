@@ -1,0 +1,31 @@
+<template name="vendorsShow">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p style="font-size: 26px;">Фирма: {{name}}</p>
+                <p><strong>Товар:</strong> изделия из кожи</p>
+                <p><strong>Описание:</strong> {{description}}</p>
+            </div>
+            <div class="col-md-8">
+                <img class="img-responsive" src="/images/vendors/{{image}}" alt="{{name}}" />
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center alert alert-info">Все товары</h2>
+            </div>
+            {{#each products}}
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="{{pathFor 'productsShow'}}"><img src="/images/products/{{image}}" alt="{{name}}"/></a>
+                    </div>
+                    <div class="caption">
+                        <h3><a href="{{pathFor 'productsShow'}}">{{name}}</a></h3>
+                        <p>{{summary}}</p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</template>

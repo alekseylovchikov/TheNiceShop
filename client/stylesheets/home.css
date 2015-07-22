@@ -1,0 +1,9 @@
+.cover {
+    background: url("images/logo.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    border-bottom: 9px solid #377aff;
+}
+
+.text-white {
+    color: #fff;
+}

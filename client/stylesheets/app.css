@@ -1,0 +1,45 @@
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+}
+
+.loading-message {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.sk-spinner-rotating-plane.sk-spinner {
+    background-color: #fff;
+}
+
+.navbar .navbar-inverse {
+    background-color: #777777;
+}
+
+.back-cover {
+    background: url("") 100% 100% no-repeat;
+    background-size: cover;
+}
+
+#footer {
+    background-color: #2768d4;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#footer p {
+    margin-top: 55px;
+    color: #fff;
+}

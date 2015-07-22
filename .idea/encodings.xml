@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/client/main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/stylesheets/app.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/_partials/nav.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/app/404.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/app/layout.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/app/loading.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/app/loading.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/home/about.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/home/contact.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/templates/home/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/router.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<template name="productsShow">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive shadow-z-4" src="/images/products/{{image}}" alt="{{name}}" title="{{name}}" />
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3>{{name}}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>Страна производитель:</strong> {{vendor.country}}</p>
+                        <p><strong>Фирма:</strong> <a href="{{vendor.url}}">{{vendor.name}}</a></p>
+                        {{#with vendor}}
+                            <p><a href="{{pathFor 'vendorsShow'}}">Подробнее</a> о производителе {{name}}</p>
+                        {{/with}}
+                        <p>Описание товара: {{{markdown description}}}</p>
+                        <h3 class="price-text-color">Цена: {{money price}}</h3>
+                        <hr/>
+                        <p>
+                            <a href="#" class="btn btn-success" id="add-to-cart"><i class="glyphicon glyphicon-shopping-cart"></i> Купить</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

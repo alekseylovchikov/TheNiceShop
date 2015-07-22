@@ -1,0 +1,28 @@
+<template name="homeIndex">
+    <div class="container">
+        <div class="cover jumbotron">
+            <div class="text-center text-white">
+                <h1>The Nice Shop</h1>
+                <p class="lead">Изделия из кожи</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center alert alert-warning shadow-z-2">Топ товаров</h2>
+            </div>
+            {{#each featured}}
+                {{> productTile this}}
+            {{/each}}
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center alert alert-danger shadow-z-2">Новинки</h2>
+            </div>
+            {{#each newProduct}}
+                {{> productTile this}}
+            {{/each}}
+        </div>
+    </div>
+</template>
