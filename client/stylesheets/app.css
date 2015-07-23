@@ -23,11 +23,6 @@
     background-color: #fff;
 }
 
-.back-cover {
-    background: url("") 100% 100% no-repeat;
-    background-size: cover;
-}
-
 #footer {
     background-color: #2768d4;
     width: 100%;
@@ -38,4 +33,9 @@
 #footer p {
     margin-top: 55px;
     color: #fff;
+}
+
+.alert-info {
+    background-color: #3f8abb;
+    box-shadow: 0 10px 10px 0 #9f9f9f;
 }

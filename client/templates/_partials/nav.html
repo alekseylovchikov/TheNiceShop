@@ -35,12 +35,12 @@
                     {{> loginButtons}}
                     <li>
                     {{#if isInRole 'admin'}}
-                        <a href="#">Admin</a>
+                        <a href="{{pathFor 'addProduct'}}">admin</a>
                     {{/if}}
                     </li>
                     {{#if currentUser}}
                         <li><a href="#"><i class="glyphicon glyphicon-list"></i> Мои заказы</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Корзина (0)</a></li>
+                        <li><a href="{{pathFor 'cartShow'}}"><i class="glyphicon glyphicon-shopping-cart"></i> Корзина (1)</a></li>
                     {{/if}}
                 </ul>
             </div>

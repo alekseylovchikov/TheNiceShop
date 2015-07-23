@@ -1,0 +1,46 @@
+<template name="addProduct">
+    <div class="container">
+        <h1 class="alert alert-info text-center">Добавить товар</h1>
+        {{#if isAdmin}}
+            <form id="addProduct">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="alert alert-warning text-center">Информация о товаре</h3>
+                        <label for="titleProduct">Название товара</label>
+                        <p><input class="form-control" type="text" name="titleProduct" id="titleProduct" placeholder="Название товара" /></p>
+                        <label for="sku">Артикул</label>
+                        <p><input class="form-control" type="text" name="sku" id="sku" placeholder="Артикул" /></p>
+                        <label for="descriptionProduct">Описание товара</label>
+                        <p><input class="form-control" type="text" name="descriptionProduct" id="descriptionProduct" placeholder="Описание" /></p>
+                        <label for="smallDescription">Краткое описание</label>
+                        <p><input class="form-control" type="text" name="smallDescription" id="smallDescription" placeholder="Краткое описание" /></p>
+                        <label for="category">Категория товара</label>
+                        <select class="form-control" name="category" id="category">
+                            <option value="">Выберите категорию товара</option>
+                            <option value="wallets">Кошельки</option>
+                            <option value="bags">Сумки</option>
+                        </select>
+                        <label for="priceProduct">Цена</label>
+                        <p><input class="form-control" type="text" name="priceProduct" id="priceProduct" placeholder="Цена (руб.)" /></p>
+                        <label for="uploadPic">Изображение товара</label>
+                        <p><input class="form-control" type="file" name="uploadPic" id="uploadPic" /></p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="alert alert-success text-center">Информация о производителе</h3>
+                        <label for="vendorName">Производитель</label>
+                        <p><input class="form-control" type="text" name="vendorName" id="vendorName" placeholder="Производитель" /></p>
+                        <label for="vendorCountry">Страна производителя</label>
+                        <p><input class="form-control" type="text" name="vendorCountry" id="vendorCountry" placeholder="Страна производителя" /></p>
+                        <label for="vendorWebPage">Сайт производителя</label>
+                        <p><input class="form-control" type="text" name="vendorWebPage" id="vendorWebPage" placeholder="Сайт производителя" /></p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="text-center"><button class="btn btn-success" type="button">Добавить товар</button></p>
+                    </div>
+                </div>
+            </form>
+        {{else}}
+            <p class="alert alert-danger text-center">Доступ закрыт</p>
+        {{/if}}
+    </div>
+</template>

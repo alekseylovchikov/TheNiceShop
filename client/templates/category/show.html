@@ -1,6 +1,10 @@
 <template name="categoryShow">
     <div class="container">
         <h1 class="alert alert-info text-center">{{name}}</h1>
+        <ol class="breadcrumb">
+            <li><a href="{{pathFor 'homeIndex'}}">Главная</a></li>
+            <li class="active">{{name}}</li>
+        </ol>
         <div class="row">
             {{#each products}}
                 <div class="col-md-6">

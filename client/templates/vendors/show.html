@@ -1,9 +1,16 @@
 <template name="vendorsShow">
     <div class="container">
+        <h1 class="alert alert-info text-center">Производители</h1>
         <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li><a href="{{pathFor 'homeIndex'}}">Главная</a></li>
+                    <li class="active">Производители</li>
+                </ol>
+            </div>
             <div class="col-md-4">
                 <p style="font-size: 26px;">Фирма: {{name}}</p>
-                <p><strong>Товар:</strong> изделия из кожи</p>
+                <p><strong>Товар:</strong> {{type}}</p>
                 <p><strong>Описание:</strong> {{description}}</p>
             </div>
             <div class="col-md-8">
